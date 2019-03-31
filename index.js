@@ -21,7 +21,7 @@ bot.on('message', (msg) => {
     bot.sendMessage(chatId, 'hi');
     else if(msg.text == 'jokes' || msg.text =='Jokes'){
        
-     request("https://api.chucknorris.io/jokes/random,function(err,body,response){
+     request("https://api.chucknorris.io/jokes/random",function(err,body,response){
     let data = JSON.parse(response)
 
     if(err){
