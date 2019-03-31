@@ -19,6 +19,6 @@
   "homepage": "https://github.com/ghostpirate/pokebot#readme",
   "dependencies": {
     "node-telegram-bot-api": "^0.30.0",
-    "request:"^2.0.0"
+    "request":"^2.0.0"
   }
 }
