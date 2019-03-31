@@ -18,7 +18,9 @@ bot.on('message', (msg) => {
     if (msg.text == 'hi' || msg.text =='Hi')
     bot.sendMessage(chatId, 'hi');
     else if(msg.text == 'jokes' || msg.text =='Jokes')
-        bot.sendMessage(chatId,'https://chuck-norris-jokes.com'
+        bot.sendMessage(chatId,'https://chuck-norris-jokes.com')
+    else if(msg.text =='how are you'||msg.text=='How are you')
+        bot.sendMessage(chatId,'fine,what about you')
     else
         bot.sendMessage(chatId,'sorry')
   });
