@@ -17,6 +17,8 @@ bot.on('message', (msg) => {
     console.log(msg.text)
     if (msg.text == 'hi' || msg.text =='Hi')
     bot.sendMessage(chatId, 'hi');
+    else if(msg.text == 'jokes' || msg.text =='Jokes')
+        bot.sendMessage(chatId,'https://chuck-norris-jokes.com'
     else
         bot.sendMessage(chatId,'sorry')
   });
