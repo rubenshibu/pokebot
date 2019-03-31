@@ -18,28 +18,7 @@ bot.on('message', (msg) => {
     const chatId = msg.chat.id;
     console.log(msg.text)
     if (msg.text == 'hi' || msg.text =='Hi')
-    bot.sendMessage(chatId, 'hi');
-    else if(msg.text == 'jokes' || msg.text =='Jokes'){
-       
-     request("https://api.chucknorris.io/jokes/random",function(err,body,response){
-    let data = JSON.parse(response)
-
-    if(err){
-        console.log("error");
-        return
-    }
-    if(data.length==0){
-        console.log("no jokes")
-        return;
-    }
-        else
-        {
-            bot.sendMessage(chatId,data.value)
-        
-        }
-    
-
-    
+    bot.sendMessage(chatId, 'hi');    
     }
         
     else if(msg.text =='how are you'||msg.text=='How are you')
