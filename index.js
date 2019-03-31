@@ -18,15 +18,7 @@ bot.on('message', (msg) => {
     if (msg.text == 'hi' || msg.text =='Hi')
     bot.sendMessage(chatId, 'hi');
     else if(msg.text == 'jokes' || msg.text =='Jokes')
-        r.on('line',a)
-
-function a(line){
-request("https://api.chucknorris.io/jokes/search?query="+line,function(err,body,response){
-    let data = JSON.parse(response)
-
-    if(err){
-        console.log("error");
-        return
+        bot.sendMessage(chatId,'https://api.chucknorris.io/jokes/search?query=')
     else if(msg.text =='how are you'||msg.text=='How are you')
         bot.sendMessage(chatId,'fine,what about you')
     else
