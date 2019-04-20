@@ -19,10 +19,10 @@ bot.on('message', (msg) => {
     console.log(msg.text)
     if (msg.text == 'hi' || msg.text =='Hi')
     bot.sendMessage(chatId, 'hi');    
-    
-        
-    else if(msg.text =='how are you'||msg.text=='How are you')
+      else if(msg.text =='how are you'||msg.text=='How are you')
         bot.sendMessage(chatId,'fine,what about you')
+    else if(msg.txt == 'JOKES' || msg.txt == 'Jokes' || msg.txt =='any jokes' || msg.txt=='Any jokes' ||msg.txt == 'Jokes of anyone')
+        bot.sendMessage(chatId,'https://pothi.com/pothi/book/natarajan-s-jokes-unlimited')
     else
         bot.sendMessage(chatId,'sorry')
   });
