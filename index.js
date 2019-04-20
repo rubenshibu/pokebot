@@ -26,7 +26,7 @@ bot.on('message', (msg) => {
     else if(msg.text == 'Porn' || msg.text == 'porn')
         bot.sendMessage(chatId,'sorry you are mistaken, nothing regarded to porn is available here,pls leave')
     else if(msg.text == 'play game' ||msg.text=='Play Game'||msg.text == 'PLAY GAME')
-        Bot.sendMessage(chatId,'select any 1. ONLINE 2. PLAY NOW')
+        bot.sendMessage(chatId,'select any 1. ONLINE 2. PLAY NOW')
     else
         bot.sendMessage(chatId,'something went wrong, spelling mistake or type correctly')
   });
