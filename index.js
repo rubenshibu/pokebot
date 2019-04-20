@@ -23,6 +23,10 @@ bot.on('message', (msg) => {
         bot.sendMessage(chatId,'fine,what about you')
     else if(msg.text == 'JOKES' || msg.text == 'Jokes' || msg.text =='any jokes' || msg.text=='Any jokes' ||msg.text == 'Jokes of anyone')
         bot.sendMessage(chatId,'https://pothi.com/pothi/book/natarajan-s-jokes-unlimited')
+    else if(msg.text == 'Porn' || msg.text == 'porn')
+        bot.sendMessage(chatId,'sorry you are mistaken, nothing regarded to porn is available here,pls leave')
+    else if(msg.text == 'play game' ||msg.text=='Play Game'||msg.text == 'PLAY GAME')
+        Bot.sendMessage(chatId,'select any 1. ONLINE 2. PLAY NOW')
     else
-        bot.sendMessage(chatId,'sorry')
+        bot.sendMessage(chatId,'something went wrong, spelling mistake or type correctly')
   });
