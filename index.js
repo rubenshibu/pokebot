@@ -26,6 +26,7 @@ bot.on('message', (msg) => {
     else if(msg.text == 'Porn' || msg.text == 'porn')
         bot.sendMessage(chatId,'sorry you are mistaken, nothing regarded to porn is available here,pls leave')
     else if(msg.text == 'play game' || msg.text=='Play Game'|| msg.text == 'PLAY GAME' || msg.text == 'Play game')
+    {
         bot.sendMessage(chatId,'select any 1. ONLINE 2. PLAY NOW')
     
     
@@ -114,7 +115,8 @@ stdin.on('data', (key) => {
 // Player Quits
 process.on('exit', () => {
   console.log('\n\nGame Over!\n');
-});          
+});
+    }
                 
                 
                 }
