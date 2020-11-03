@@ -25,10 +25,18 @@ bot.on("message", (msg) => {
     msg.text == "any jokes" ||
     msg.text == "Any jokes" ||
     msg.text == "Jokes of anyone"
-  )
+  ){
     bot.sendMessage(
       chatId,
       "https://pothi.com/pothi/book/natarajan-s-jokes-unlimited"
-    );
+    );}
+    else if (message.startsWith("/")) {
+      switch (message) {
+          case "/start":
+              commands.startMessage(name, bot, chat_id);
+              break;
+      }
+  }
+
 
 });
